@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Эвакуация</title>
+    <script src="game/scripts/materials.js" defer></script>
+    <script src="game/scripts/classes.js" defer></script>
+    <script src="game/scripts/debug_functions.js" defer></script>
+    <script src="game/scripts/preferences.js" defer></script>
+    <script src="game/scripts/floor_switch.js" defer></script>
+    <script src="game/scripts/main.js" defer></script>
+    <script src="game/scripts/map.js" defer></script>
+    <style>
+        *{
+            color:white;
+            margin: 0;
+            padding: 0;
+        }
+        body,html{
+            height: 100%;
+            overflow: hidden;
+        }
+        #game{
+            position: relative;
+            background-color: #000220;
+        }
+        .floor-switch{
+            font-size: 30px;
+            padding: 30px;  
+            box-sizing: border-box;
+            position: absolute;
+            top: 40%;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 20%;
+            aspect-ratio: 1.5;
+            background-color: #000220;
+            border-radius: 15px;
+            justify-content: space-around;
+            display: grid;
+            grid-template-columns: repeat(3,25%);
+            display: none;
+            row-gap: 20px;
+        }
+        .floor-switch__variant{
+            cursor: pointer;
+            margin: auto;
+            background-color: #01075c;
+            aspect-ratio: 1;
+            width: 100%;
+            border-radius: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .floor-switch__close{
+            position: absolute;
+            cursor: pointer;
+            top: 3px;
+            right: 3px; 
+            width: 30px;
+            height: 30px;
+        }
+        .floor-switch__close::before,.floor-switch__close::after{
+            width: 30px;
+            height: 5px;
+            top: 50%;
+            left: 50%;
+            transform-origin: center;
+            transform: translate(-50%,-50%) rotateZ(45deg);
+            content:"";
+            position: absolute;
+            background-color: #30346c;
+            transition: .3s;
+        }
+        .floor-switch__close::after{
+            transform: translate(-50%,-50%) rotateZ(-45deg);
+
+        }
+        .floor-switch__close:hover::after,.floor-switch__close:hover::before{
+            opacity: .5;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="game">
+    </canvas>
+    <div class="floor-switch">
+        <div class="floor-switch__close"></div>
+        <div class="floor-switch__variant">1</div>
+        <div class="floor-switch__variant">2</div>
+        <div class="floor-switch__variant">3</div>
+        <div class="floor-switch__variant">4</div>
+        <div class="floor-switch__variant">5</div>
+    </div>
+</body>
+</html>

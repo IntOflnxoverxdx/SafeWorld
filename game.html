@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SafeWorld - Главная</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="scripts/slider.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
+    
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="img/logos/our.png" alt="">
+            </a>
+            <div id="nav-button"></div>
+            <ul class="navigation header__navigation inactive">
+                <li class="heading"><a href="index.html">Главная</a></li>
+                <li class="heading"><a href="causes.html">Причины и последствия</a></li>
+                <li class="heading"><a href="safety.html">Безопасность</a></li>
+                <li class="heading"><a href="game.html">Игра</a></li>
+            </ul>
+        </div>
+    </header>
+    <main>
+       <section class="game">
+            <div class="game__overlay">
+                <h2 class="game__heading">Справитесь ли вы с эвакуацией из колледжа во время ЧС?</h2>
+                <a href="play.html" class="play button">ИГРАТЬ</a>
+            </div>
+       </section>
+       <section class="game-description">
+        <div class="background-light top right"></div>
+        <div class="background-light left centerV"></div>
+        <div class="background-light bottom right"></div>
+        <div class="container">
+        <h2>Что нужно делать в игре?</h2>
+        <div class="about__wrapper">
+            <div class="about__item">
+                <img class="about__item__icon" src="img/icons/star.svg" alt="">
+                <h4>Исследование локации</h4>
+                <p class="about__item__info">Исследовать колледж, чтобы найти выход. Это включает в себя поиск различных путей и коридоров. </p>
+            </div>
+            <div class="about__item">
+                <img class="about__item__icon" src="img/icons/safety.svg" alt="">
+                <h4>Ориентирование в пространстве</h4>
+                <p class="about__item__info">Пользователь должен после изучения локации спокойно ориентироваться в пространстве, не путая ходы и коридоры. </p>
+            </div>
+            <div class="about__item">
+                <img class="about__item__icon" src="img/icons/game.svg" alt="">
+                <h4>Поиск безопасных выходов</h4>
+                <p class="about__item__info">Осмотреть локацию и найти более безопасные выходы при возникновении ЧС.</p>
+            </div>
+        </div>
+        <h2>Фото локаций</h2>
+        <p class="locations">Локации созданы на основе планов эвакуации нашего колледжа</p>
+        <div class="locations-photos">
+            <div id="backbutton"></div>
+            <div id="forwbutton"></div>
+            <img class="" src="img/game/loc1.png" alt="">
+            <img class="" src="img/game/loc2.png" alt="">
+            <img class="" src="img/game/loc3.png" alt="">
+            <img class="" src="img/game/loc4.png" alt="">
+            <img class="" src="img/game/loc5.png" alt="">
+        </div>
+        <h2>Зачем нужна наша игра</h2>
+        <div class="arguments">
+            <div class="arguments__item">
+                <div class="arguments__item__content">
+                    Игра предоставляет возможность игрокам научиться основам искать безопасные выходы при пожарах, землетрясениях, и тд. Это может быть особенно полезно для подростков и молодых взрослых, которые могут столкнуться с подобными ситуациями в реальной жизни.
+                </div>
+                <div class="arguments__splitline"></div>
+                <div class="arguments__heading">
+                    Обучение навыкам
+                </div>
+            </div>
+            <div class="arguments__item">
+                <div class="arguments__item__content">
+                    Игра требует от игроков стратегического мышления и принятия быстрых решений в условиях стресса. Это помогает развивать у них навыки планирования, анализа ситуации и принятия решений в реальном времени.
+                </div>
+                <div class="arguments__splitline"></div>
+                <div class="arguments__heading">
+                    Развитие стратегического мышления
+                </div>
+            </div>
+            <div class="arguments__item">
+                <div class="arguments__item__content">
+                    Игра может помочь повысить осведомленность об аварийной подготовке и важности знания процедур эвакуации. Она может стимулировать игроков задуматься о том, как они будут действовать в случае чрезвычайной ситуации, и может подтолкнуть их к изучению соответствующих рекомендаций и инструкций.
+                </div>
+                <div class="arguments__splitline"></div>
+                <div class="arguments__heading">
+                    Повышение осведомленности об аварийной подготовке
+                </div>
+            </div>
+        </div>
+        </div>
+       </section>
+    </main>
+    <footer>
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="img/logos/our.png" alt="">
+                SafeWorld
+            </a>
+            <div class="copyright">
+                © 2024 <u>Воробьев Кирилл</u> и <u>Чайка Виктория</u>
+            </div>
+            <div class="additional-info">
+                Руководитель: Ким Елена Артуровна <br>
+                КГА ПОУ "ДВТК"
+            </div>
+        </div>
+    </footer>        
+    <script >
+        if (window.innerWidth <= 760) document.querySelector(".game__heading").innerHTML = "Игра не поддерживается на мобильных устройствах"
+    </script>        
+</body>
+</html>

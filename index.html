@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SafeWorld - Главная</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="scripts/fade-in.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/phone-slider.js" defer></script>
+    <style>
+        body{
+            background-image: url("img/layout/welcome-background.png");
+            background-repeat: no-repeat;
+            background-position: center 0;
+            background-size: 100% 85%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="img/logos/our.png" alt="">
+            </a>
+            <h1 class="heading">SafeWorld</h1>
+            <a href="https://dvtk.info" class="logo">
+                <img src="img/logos/dvtk.svg" alt="">
+            </a>
+        </div>
+    </header>
+    <main>
+        <section class="welcome">
+            <div class="container">
+                <div class="background-light top right"></div>
+                <div class="background-light bottom left"></div>
+                <nav>
+                    <ul class="navigation">
+                        <li id="causes" class="heading"><a href="causes.html">Причины и последствия</a></li>
+                        <li id="safety" class="heading"><a href="safety.html">Безопасность</a></li>
+                        <li id="game" class="heading"><a href="game.html">Игра</a></li>
+                    </ul>
+                </nav>
+                <div class="phone-slider">
+                    <img src="img/layout/phone.png" alt="" id="phone">
+                    <div class="screen">
+                        <div class="message fromsection">
+                            <div class="message__header">
+                                <span class="message__header__app">Сообщения</span>
+                                <span class="message__header__time">17:57</span>
+                            </div>
+                            <div class="message__main">
+                                <div class="message__pic">
+                                    <img src="img/icons/user.png" alt="">
+                                </div>
+                                <div class="message__content">
+                                    <p class="message__author">
+                                        RSCHS
+                                    </p>
+                                    <p class="message__text">
+                                        Очень сильный ветер ожидается преимущественно на востоке края, ветер на побережье до 30 м/с. Воздержитесь от выезда за пределы населенных пунктов. Тел: 101, 112.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="message inactive fromcauses">
+                            <div class="message__header">
+                                <span class="message__header__app">Сообщения</span>
+                                <span class="message__header__time">8:21</span>
+                            </div>
+                            <div class="message__main">
+                                <div class="message__pic">
+                                    <img src="img/icons/user.png" alt="">
+                                </div>
+                                <div class="message__content">
+                                    <p class="message__author">
+                                        SafeWorld
+                                    </p>
+                                    <p class="message__text">
+                                        Ещё не знаешь причин и последствия ЧС или хочешь узнать больше? Быстрее переходи на эту страницу!
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="message inactive fromsafety">
+                            <div class="message__header">
+                                <span class="message__header__app">Сообщения</span>
+                                <span class="message__header__time">11:31</span>
+                            </div>
+                            <div class="message__main">
+                                <div class="message__pic">
+                                    <img src="img/icons/user.png" alt="">
+                                </div>
+                                <div class="message__content">
+                                    <p class="message__author">
+                                        SafeWorld
+                                    </p>
+                                    <p class="message__text">
+                                        Если хочешь узнать как обезопасить себя во время ЧС, то тебе сюда
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="message inactive fromgame">
+                            <div class="message__header">
+                                <span class="message__header__app">Сообщения</span>
+                                <span class="message__header__time">14:16</span>
+                            </div>
+                            <div class="message__main">
+                                <div class="message__pic">
+                                    <img src="img/icons/user.png" alt="">
+                                </div>
+                                <div class="message__content">
+                                    <p class="message__author">
+                                        SafeWorld
+                                    </p>
+                                    <p class="message__text">
+                                        Проверь свои навыки поиска безопасных выходов и исследования локации
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <img class="screen__background" src="img/layout/screen.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="about">
+            <div class="container">
+                <h2 class="fade UP">О чём вы можете узнать нашем сайте</h2>
+                <div class="about__wrapper">
+                    <div class="about__item">
+                        <img class="about__item__icon" src="img/icons/star.svg" alt="">
+                        <h4>Причины и последствия</h4>
+                        <p class="about__item__info">По каким причинам могут возникать различные ЧС и какие у них последствия</p>
+                    </div>
+                    <div class="about__item">
+                        <img class="about__item__icon" src="img/icons/safety.svg" alt="">
+                        <h4>Безопасность</h4>
+                        <p class="about__item__info">Меры безопасности при различных ЧС и что нужно делать при возникновении</p>
+                    </div>
+                    <div class="about__item">
+                        <img class="about__item__icon" src="img/icons/game.svg" alt="">
+                        <h4>Игра</h4>
+                        <p class="about__item__info">Поиграть в разработанную нами игру, проверив полученную теорию</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="types">
+                <div class="background-light top right"></div>
+                <div class="background-light centerV left"></div>
+                <div class="background-light bottom right"></div>
+            <div class="container">
+                <h2 class="fade UP">Что такое ЧС?</h2>
+                <div class="sidesblock">
+                    <div class="sidesblock__info">
+                        <p class="sidesblock__info__text">
+                            Это ситуация, возникающая внезапно, требующая немедленного реагирования и координации действий для предотвращения угрозы для жизни, здоровья, имущества и окружающей среды. Такие ситуации могут включать природные катастрофы, техногенные катастрофы, террористические акты, эпидемии и другие нештатные ситуации. Обычно управление ЧС осуществляется соответствующими государственными или муниципальными службами с участием спасательных, медицинских, правоохранительных и других служб.
+                        </p>
+                    </div>
+                    <img src="img/main/emergency.jpg" alt="" class="sidesblock__img">
+                </div>
+                <h2 class="fade UP">Виды ЧС</h2>
+                <div class="sidesblock inv">
+                    <div class="sidesblock__info">
+                        <h5>Природные ЧС</h5>
+                        <p class="sidesblock__info__text">
+                            Природная чрезвычайная ситуация (ЧС) - это критическая ситуация или катастрофа, вызванная природными явлениями, такими как землетрясения, наводнения, ураганы, циклоны, лесные пожары, извержения вулканов и другие природные бедствия.
+                        </p>
+                        <div class="buttons">
+                            <a href="causes.html#nat" class="button bblue">подробнее</a>
+                            <a href="safety.html#nat" class="button btrans">защита</a>
+                        </div>
+                    </div>
+                    <img src="img/main/nature.jpg" alt="" class="sidesblock__img">
+                </div>
+                <div class="sidesblock">
+                    <div class="sidesblock__info">
+                        <h5>Техногенные ЧС</h5>
+                        <p class="sidesblock__info__text">
+                            Техногенные чрезвычайные ситуации (ЧС) - это критические ситуации или катастрофы, вызванные человеческой деятельностью, технологическими авариями или неполадками в технических системах. Такие ситуации могут включать в себя аварии на промышленных объектах, транспортные катастрофы, прорывы и разливы опасных веществ, техногенные загрязнения окружающей среды и другие подобные ситуации.
+                        </p>
+                        <div class="buttons">
+                            <a href="causes.html#tech" class="button bblue">подробнее</a>
+                            <a href="safety.html#tech" class="button btrans">защита</a>
+                        </div>
+                    </div>
+                    <img src="img/main/tech.jpeg" alt="" class="sidesblock__img">
+                </div>
+                <div class="sidesblock inv">
+                    <div class="sidesblock__info">
+                        <h5>Биологические ЧС</h5>
+                        <p class="sidesblock__info__text">
+                            Биологические чрезвычайные ситуации (ЧС) - это ситуации, возникающие из-за распространения инфекционных заболеваний, эпидемий или пандемий, которые могут иметь серьезные последствия для здоровья и безопасности людей, животных и растений.
+                        </p>
+                        <div class="buttons">
+                            <a href="causes.html#bio" class="button bblue">подробнее</a>
+                            <a href="safety.html#bio" class="button btrans">защита</a>
+                        </div>
+                    </div>
+                    <img src="img/main/biological.jpg" alt="" class="sidesblock__img">
+                </div>
+                <div class="sidesblock">
+                    <div class="sidesblock__info">
+                        <h5>Социальные ЧС</h5>
+                        <p class="sidesblock__info__text">
+                            Социальные чрезвычайные ситуации - это ситуации, которые порождают серьезные социальные проблемы и угрозы для благополучия общества, вызванные социальными конфликтами, насилием, массовыми беспорядками, террористическими актами, гражданскими волнениями, экономическими кризисами и другими аналогичными событиями.
+                        </p>
+                        <div class="buttons">
+                            <a href="causes.html#soc" class="button bblue">подробнее</a>
+                            <a href="safety.html#soc" class="button btrans">защита</a>
+                        </div>
+                    </div>
+                    <img src="img/main/social.jpg" alt="" class="sidesblock__img">
+                </div>
+            </div>
+        </section>
+
+        </main>
+        <footer>
+            <div class="container">
+                <a href="index.html" class="logo">
+                    <img src="img/logos/our.png" alt="">
+                    SafeWorld
+                </a>
+                <div class="copyright">
+                    © 2024 <u>Воробьев Кирилл</u> и <u>Чайка Виктория</u>
+                </div>
+                <div class="additional-info">
+                    Руководитель: Ким Елена Артуровна <br>
+                    КГА ПОУ "ДВТК"
+                </div>
+            </div>
+        </footer>        
+</body>
+</html>
